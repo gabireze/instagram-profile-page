@@ -56,6 +56,23 @@ main {
 	justify-content: left;
 }
 
+.small {
+	margin-top: 16px;
+	margin-left: 8px;
+	margin-right: 8px;
+	gap: 0;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.short {
+	margin-top: 16px;
+	margin-left: 8px;
+	margin-right: 8px;
+	justify-content: stretch;
+	align-items: center;
+}
+
 .profile-header-button {
 	border: 1px solid rgba(var(--ca6, 219, 219, 219), 1);
 	background-color: transparent;
@@ -76,7 +93,21 @@ main {
 	border-radius: 50%;
 }
 
+hr {
+	border: 1px solid rgba(var(--ce3, 239, 239, 239), 1);
+}
+
 .profile-header div:last-child button {
+	background-color: transparent;
+	border: none;
+}
+
+button.option {
+	background-color: transparent;
+	border: none;
+}
+
+button.wpO6b {
 	background-color: transparent;
 	border: none;
 }
@@ -182,4 +213,74 @@ main {
 	grid-gap: 28px;
 	margin: 0 auto;
 	flex-wrap: wrap;
+}
+
+.small-img {
+	width: 293px;
+	height: 293px;
+	object-fit: fill;
+	cursor: pointer;
+	transition: all linear 0.4s;
+}
+
+.small-img:hover {
+	filter: grayscale(100%);
+	transform: scale(1.1);
+}
+
+#modal-bg {
+	background-color: rgba(0, 0, 0, .7);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+#modal-img {
+	height: 600px;
+	width: 480px;
+	object-fit: fill;
+}
+
+#modal-aside {
+	width: 335px;
+	height: 600px;
+	background-color: #ffff;
+	position: relative;
+}
+
+#profile-image-small {
+	height: 32px;
+	width: 32px;
+	object-fit: cover;
+	position: relative;
+	border-radius: 50%;
+}
+
+#likes {
+	font-weight: bolder;
+}
+
+.modal-active #modal-img {
+	transform: scale(1);
+}
+
+.modal {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	visibility: hidden;
+	z-index: 1;
+	opacity: 0;
+}
+
+.modal-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.modal-active {
+	visibility: visible;
+	opacity: 1;
 }
