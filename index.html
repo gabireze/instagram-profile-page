@@ -38,7 +38,7 @@
             </div>
           </div>
           <hr>
-          <div class="row short"> <button class="wpO6b  " onclick="buttonClick()" type="button">
+          <div class="row short"> <button class="wpO6b  " onclick="likePhoto()" type="button">
               <div class="QBdPU ">
                 <span class="">
                   <svg aria-label="Curtir" class="_8-yf5 " fill="#262626" height="24" viewBox="0 0 48 48" width="24">
@@ -50,6 +50,14 @@
               </div>
             </button>
             <span>Curtido por </span><span id="likes">0</span><span> pessoas</span>
+          </div>
+          <div id="comments"></div>
+          <div class="row short">
+            <div class="" style="right: 53px; bottom: 355px;"></div><textarea aria-label="Adicione um comentário..."
+              placeholder="Adicione um comentário..." id="commentary" autocomplete="off" autocorrect="off"
+              style="height: 18px !important;"></textarea>
+            <button onclick="submitCommentary()">Publicar</button>
+
           </div>
 
         </header>
@@ -111,7 +119,7 @@
       </nav>
     </div>
   </section>
-  <main>
+  <main id="main">
     <header class="profile-header">
       <div id="profile-image-div">
         <img id="profile-image"
@@ -196,14 +204,6 @@
           </a>
         </li>
       </ul>
-    </section>
-    <section class="images">
-      <div class="card-img"><img class="small-img" src="https://via.placeholder.com/1080x1350"></img></div>
-      <div class="card-img"><img class="small-img" src="https://via.placeholder.com/500"></img></div>
-      <div class="card-img"><img class="small-img" src="https://via.placeholder.com/720x1080"></img></div>
-      <div class="card-img"><img class="small-img" src="https://via.placeholder.com/293"></img></div>
-      <div class="card-img"><img class="small-img" src="https://via.placeholder.com/450"></img></div>
-      <div class="card-img"><img class="small-img" src="https://via.placeholder.com/293"></img></div>
     </section>
   </main>
   <script src="gallery.js"></script>
