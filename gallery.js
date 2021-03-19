@@ -13,7 +13,7 @@ let clickedImage = {}
 
 for (let i = 0; i < images.length; i++) {
   if (!document.getElementById("images")) {
-    var imagesSection = document.createElement("section")
+    var imagesSection = document.createElement("section");
     imagesSection.setAttribute('id', 'images');
   }
 
@@ -66,6 +66,37 @@ for (let i = 0; i < images.length; i++) {
     var profileImageSmall = document.createElement('img');
     profileImageSmall.setAttribute('id', 'profile-image-small');
     profileImageSmall.setAttribute('src', 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    
+    var usernameSmall = document.createElement('span');
+    usernameSmall.setAttribute('id', 'username-small');
+
+    var usernameBold = document.createElement('b');
+
+    var username = document.createTextNode('sophie.hills');
+
+    var followStatusSmallDiv = document.createElement('span');
+
+    var followStatusSmallBold = document.createElement('b');
+
+    var followStatusSmall = document.createTextNode('Seguindo');
+
+    var optionDiv = document.createElement('div');
+
+    var optionButton = document.createElement('button');
+    optionButton.className = 'option';
+    
+    var svgOption = document.createElement('svg');
+    svgOption.setAttribute('arial-label', 'Opções');
+    svgOption.setAttribute('fill', '#262626');
+    svgOption.setAttribute('height', '24');
+    svgOption.setAttribute('viewBox', '0 0 48 48');
+    svgOption.setAttribute('width', '24');
+
+    var circuleOption1 = document.createElement('circle');
+    circuleOption1.setAttribute('arial-label', 'Opções');
+    circuleOption1.setAttribute('fill', '#262626');
+    circuleOption1.setAttribute('height', '24');
+    circuleOption1.setAttribute('viewBox', '0 0 48 48');
   });
 }
 
